@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+	"=//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+	<hibernate-configuration>
+	
+	<session-factory>
+	<!--  Database connection settings -->
+	<property name="connection.driver.class">org.postgresql.Driver</property>
+	<property name="connection.url">jdbc:postgresql://localhost:5432/atencli</property>
+	<property name="connection.username">admin1</property>
+	<property name="connection.password">admin1</property>
+		
+	<!-- SQL Dialect -->
+	<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+	
+	<!-- Echo all executed SQL to stdout -->
+	<property name="show_sql">true</property>
+	
+	
+	<mapping class="sv.edu.ucad.et1.atencli.data.entities.Carrera"/>
+	<mapping class="sv.edu.ucad.et1.atencli.data.entities.Alumnos"/>
+	<!-- <mapping class="sv.edu.ucad.et1.atencli.data.entities.Bibliografia"/> -->
+	<!-- <mapping class="sv.edu.ucad.et1.atencli.data.entities.Autor"/> -->
+	<!-- <mapping class="sv.edu.ucad.et1.atencli.data.entities.Prestamos"/> -->
+	<!-- <mapping class="sv.edu.ucad.et1.atencli.data.entities.Utiles"/> -->
+		
+	</session-factory>
+	</hibernate-configuration>
+	
+	
+	
+	
+	
